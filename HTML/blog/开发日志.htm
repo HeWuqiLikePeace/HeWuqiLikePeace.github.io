@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题 1</title>
+<style type="text/css">
+.style1 {
+	font-size: xx-large;
+}
+</style>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body style="background-image: url('../bg.png'); background-attachment: fixed" onload="FP_preloadImgs(/*url*/'img/button1D.jpg',/*url*/'img/button1E.jpg')">
+
+<h1 class="style1">
+
+<a href="../neirong.htm">
+<img style="border: 0" id="img1" src="img/button1C.jpg" height="20" width="100" alt="返回" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'img/button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'img/button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'img/button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'img/button1D.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Simple Arrow 1; fp-font: SimSun-ExtB; fp-font-style: Bold; fp-font-size: 16; fp-font-color-hover: #00FF00; fp-font-color-press: #00FFFF; fp-justify-horiz: 0" fp-title="返回" --></a></h1>
+<h1 class="style1">开发日志（时间倒序）</h1>
+<p>虽然不知道客人为什么会点进这里，不过欢迎你，我的客人(￣v￣)／</p>
+<hr />
+<ul>
+	<li>
+	<h2>2022年</h2>
+	<ul>
+		<li>
+		<h2>1月11日（v1.1.2Beta）</h2>
+		<ul>
+			<li>加入了一只看板娘</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+<ul>
+	<ul>
+		<li>
+		<h2>1月10日（v1.1.1Beta）</h2>
+		<ul>
+			<li>部署至网站</li>
+			<li>开放测试</li>
+		</ul>
+		</li>
+		<li>
+		<h2>1月1日（初版v0.1Alpha）</h2>
+		<ul>
+			<li>&nbsp;项目立项</li>
+			<li>网页设计完成</li>
+			<li>进入内测阶段</li>
+		</ul>
+		</li>
+	</ul>
+</ul>
+
+</body>
+
+</html>
