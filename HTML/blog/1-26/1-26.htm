@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1-15</title>
+<style type="text/css">
+.style2 {
+				color: #C0C0C0;
+}
+.style3 {
+				background-color: #FF0000;
+}
+.style4 {
+				color: #FFFFFF;
+				background-color: #222226;
+}
+</style>
+<base target="_blank" />
+</head>
+
+<body style="background-image: url('../../bg.png'); background-attachment: fixed">
+
+<h1>在树莓派上部署私有云（学习记录）</h1>
+<p>2022-1-26</p>
+<hr />
+
+<p>看到了<a href="https://mp.weixin.qq.com/s?__biz=MzI4NDUwOTY3Mg==&amp;mid=2247485365&amp;idx=1&amp;sn=f2761b9be0630f8f13444b0621b2cf6c&amp;chksm=ebfb1332dc8c9a24cbf9f8164a8a865f933e0712ac36cf41a6148693bcf67003cdba65090909&amp;scene=90&amp;subscene=93&amp;sessionid=1643197038&amp;clicktime=1643197040&amp;enterid=1643197040&amp;forceh5=1&amp;ascene=56&amp;devicetype=android-22&amp;version=28000736&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=AaWHvtsWX0k4U2yPW87SpxA%3D&amp;pass_ticket=XD1ykZJOFO5Gav%2BLo6ZjuyjSqj7aGBbAjflBkLdIpCYbNOiCx7063lgrboq%2FR0VR&amp;wx_header=3">树莓派爱好者基地推送的文章</a>，又正好放寒假，</p>
+<p>那就搞一搞呗，按教程一步步走就完事了，</p>
+<p>理应是这样的，</p>
+<p>在安装管理客户端时出现了以下提示：</p>
+<p id="articleContentId" style="box-sizing: border-box; outline: 0px; margin: 0px; padding: 0px; font-weight: 600; font-family: &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, SimHei, Arial, SimSun; font-size: 28px; overflow-wrap: break-word; color: rgb(34, 34, 38); word-break: break-all; font-style: normal; font-variant-ligatures: common-ligatures; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+&nbsp;
+为了让这个仓库能够应用，这必须在更新之前显式接受</p>
+<p>（别说我打错字了，这是Linux系统汉化问题）</p>
+<p>解决此故障可将：</p>
+<p><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp; sudo apt-get update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+<p>更改为：</p>
+<p><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sudo apt update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+<p>并在出现提示时选择“Y”即可正常更新安装</p>
+<p>最后在同一局域网下访问<a href="http://192.168.0.12:8888">192.168.0.12:8888</a>进入登录页面</p>
+<p><span class="style3">重点</span>：在每次启动树莓派时要进入终端输入</p>
+<p><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp; docker start nextcloud&nbsp;&nbsp;&nbsp; 启动服务&nbsp;&nbsp;&nbsp;&nbsp; 
+</span></p>
+<p><span class="style4">&nbsp;（docker stop nextcloud）停止服务&nbsp;&nbsp;&nbsp;&nbsp; 
+</span></p>
+<p>（然后发现树莓派存储空间太小不能满足长期存储需要，这个项目宣告结束）</p>
+<hr />
+<p class="style2">记录学习过程，便于日后查看</p>
+
+</body>
+
+</html>
