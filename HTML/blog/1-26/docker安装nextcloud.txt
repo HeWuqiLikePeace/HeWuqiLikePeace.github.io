@@ -1,0 +1,13 @@
+进入管理员账户：
+sudo su
+
+通过docker安装nextcloud：
+docker run -d -p 8888:80  --name nextcloud  -v /data/nextcloud/:/var/www/html/ --restart=always   --privileged=true  arm64v8/nextcloud
+
+编辑配置文件：
+nano /data/nextcloud/config/config.sample.php
+替换为：
+1 => preg_match('/cli/i',php_sapi_name())?'127.0.0.1':$_SERVER['SERVER_NAME']
+
+安装nextcloud客户端：
+apt install nextcloud-desktop-l10n nextcloud-desktop -y
