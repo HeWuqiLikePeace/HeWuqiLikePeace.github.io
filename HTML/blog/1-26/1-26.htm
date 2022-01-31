@@ -11,9 +11,18 @@
 .style3 {
 				background-color: #FF0000;
 }
-.style4 {
+.style5 {
 				color: #FFFFFF;
-				background-color: #222226;
+}
+.style6 {
+				background-color: #000000;
+}
+.style7 {
+				color: #FFFFFF;
+				background-color: #000000;
+}
+.style8 {
+				background-color: #FFFF00;
 }
 </style>
 <base target="_blank" />
@@ -29,25 +38,27 @@
 <p>那就搞一搞呗，按教程一步步走就完事了，</p>
 <p>理应是这样的，</p>
 <p>在安装管理客户端时出现了以下提示：</p>
-<p id="articleContentId" style="box-sizing: border-box; outline: 0px; margin: 0px; padding: 0px; font-weight: 600; font-family: &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, SimHei, Arial, SimSun; font-size: 28px; overflow-wrap: break-word; color: rgb(34, 34, 38); word-break: break-all; font-style: normal; font-variant-ligatures: common-ligatures; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
-&nbsp;
-为了让这个仓库能够应用，这必须在更新之前显式接受</p>
+<p class="style5"><span class="style6">&nbsp; <code>&nbsp; 
+为了让这个仓库能够应用，这必须在更新之前显式接受</code>&nbsp; </span></p>
 <p>（别说我打错字了，这是Linux系统汉化问题）</p>
 <p>解决此故障可将：</p>
-<p><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp; sudo apt-get update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></p>
+<p class="style5"><span class="style6"><code>&nbsp;&nbsp; sudo apt-get update&nbsp;
+</code></span></p>
 <p>更改为：</p>
-<p><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sudo apt update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></p>
+<p><span class="style7"><code>&nbsp;&nbsp; sudo apt update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</code></span></p>
 <p>并在出现提示时选择“Y”即可正常更新安装</p>
 <p>最后在同一局域网下访问<a href="http://192.168.0.12:8888">192.168.0.12:8888</a>进入登录页面</p>
-<p><span class="style3">重点</span>：在每次启动树莓派时要进入终端输入</p>
-<p><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp; docker start nextcloud&nbsp;&nbsp;&nbsp; 启动服务&nbsp;&nbsp;&nbsp;&nbsp; 
+<p><span class="style3">重点</span>：在每次启动树莓派时要进入终端启动服务</p>
+<p><code><span class="style7">&nbsp;&nbsp; docker start nextcloud&nbsp;&nbsp;&nbsp; 
+#启动服务&nbsp;&nbsp;&nbsp; </span></code></p>
+<p><span class="style7">&nbsp;&nbsp;&nbsp; <code>&nbsp;<span class="style6">docker 
+restart </span><span class="style6">nextcloud&nbsp; #重启服务</span></code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></p>
-<p><span class="style4">&nbsp;（docker stop nextcloud）停止服务&nbsp;&nbsp;&nbsp;&nbsp; 
-</span></p>
+<p class="style5"><code><span class="style6">&nbsp;&nbsp; docker stop nextcloud&nbsp;&nbsp;&nbsp;&nbsp; 
+#停止服务&nbsp;&nbsp;&nbsp; </span></code></p>
 <p>（然后发现树莓派存储空间太小不能满足长期存储需要，这个项目宣告结束）</p>
-<p>附件：<a href="docker安装nextcloud.txt">docker安装nextcloud.txt</a></p>
+<p><span class="style8">附件</span>：<a href="docker安装nextcloud.txt">docker安装nextcloud.txt</a></p>
 <hr />
 <p class="style2">记录学习过程，便于日后查看</p>
 
