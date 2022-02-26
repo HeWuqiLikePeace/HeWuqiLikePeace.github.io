@@ -35,7 +35,36 @@ a:hover {
 .style5 {
 				text-align: left;
 }
+#apDiv1 {
+	position: absolute;
+	left: 15px;
+	top: 615px;
+	width: 446px;
+	height: 33px;
+	z-index: 1;
+}
+.style7 {
+	color: #0000FF;
+}
 </style>
+<script type="text/javascript">
+<!--
+function FP_setLayerText(id,txt) {//v1.0
+ var d=document,el=FP_getObjectByID(id);		
+ if(el.innerHTML!=null)el.innerHTML=txt; 
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
 </head>
 
 <body style="background-image: url('../img/bg.png')">
@@ -50,6 +79,9 @@ a:hover {
 <p style="width: 939px">这里有我的资源库，客人可以在那里获取一些资源，</p>
 <p style="width: 961px">但资源库里的东西还很少，希望客人可以邮箱/QQ联系我，共享手中的资源</p>
 <p style="width: 844px"><img alt="" src="../img/liuyan.png" width="695" height="315" /></p>
+
+<div style="position: absolute; width: 183px; height: 20px; z-index: 1; left: 10px; top: 621px" id="layer1" class="style7" onclick="FP_setLayerText(/*id*/'layer1', '怎么可能有这种东西呢？')">
+	<u "FP_popUpMsg('怎么可能有这种东西呢？'); FP_popUpMsg('怎么可能有这种东西呢？'); FP_setLayerText(/*id*/'layer1', '怎么可能有这种东西呢？')">《隐私政策与用户协议》</u></div>
 
 </body>
 
