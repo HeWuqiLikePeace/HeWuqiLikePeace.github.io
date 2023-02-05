@@ -5,6 +5,8 @@
 .a1 {
 	font-family: dyh;
 }
+a{text-decoration : none} 
+a:hover{text-decoration:underline} 
 /*
 html {
     -webkit-filter: grayscale(100%);
