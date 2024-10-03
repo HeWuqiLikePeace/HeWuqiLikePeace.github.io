@@ -1,76 +1,53 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>1-26</title>
-<style type="text/css">
-.style2 {
-				color: #C0C0C0;
-}
-.style3 {
-				background-color: #FF0000;
-}
-.style5 {
-				color: #FFFFFF;
-}
-.style6 {
-				background-color: #000000;
-}
-.style7 {
-				color: #FFFFFF;
-				background-color: #000000;
-}
-.style8 {
-				background-color: #FFFF00;
-}
-.style1 {
-	font-size: xx-large;
-	font-family: 黑体;
-}
-.style9 {
-	background-color: #FFFFFF;
-}
-</style>
-<base target="_blank" />
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>1-26</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="../../../css/text.css" />
+	</head>
 
-<body style="background-image: url('../../../img/bg.png'); background-attachment: fixed">
+	<body style="background-color: white; background-attachment: fixed">
 
-<h1>在树莓派上部署私有云（学习记录）</h1>
-<p>2022-1-26</p>
-	<div style="position: absolute; width: 107px; height: 37px; z-index: 1; left: 100px; top: 63px" id="layer2" class="style9">
-		<a target="_self" href="javascript:history.go(-1);" class="style1">
-		<span class="style9">返回</span></a></div>
-<hr />
+		<h1>在树莓派上部署私有云（学习记录）</h1>
+		<p>2022-1-26</p>
+		<div style="position: absolute; width: 107px; height: 37px; z-index: 1; left: 100px; top: 63px"
+			id="layer2" class="back">
+			<a target="_self" href="javascript:history.go(-1);" class="back">
+				<span class="back">返回</span></a>
+		</div>
+		<hr />
 
-<p>看到了<a href="https://mp.weixin.qq.com/s?__biz=MzI4NDUwOTY3Mg==&amp;mid=2247485365&amp;idx=1&amp;sn=f2761b9be0630f8f13444b0621b2cf6c&amp;chksm=ebfb1332dc8c9a24cbf9f8164a8a865f933e0712ac36cf41a6148693bcf67003cdba65090909&amp;scene=90&amp;subscene=93&amp;sessionid=1643197038&amp;clicktime=1643197040&amp;enterid=1643197040&amp;forceh5=1&amp;ascene=56&amp;devicetype=android-22&amp;version=28000736&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=AaWHvtsWX0k4U2yPW87SpxA%3D&amp;pass_ticket=XD1ykZJOFO5Gav%2BLo6ZjuyjSqj7aGBbAjflBkLdIpCYbNOiCx7063lgrboq%2FR0VR&amp;wx_header=3">树莓派爱好者基地推送的文章</a>，又正好放寒假，</p>
-<p>那就搞一搞呗，按教程一步步走就完事了，</p>
-<p>理应是这样的，</p>
-<p>在安装管理客户端时出现了以下提示：</p>
-<p class="style5"><span class="style6">&nbsp; <code>&nbsp; 
-为了让这个仓库能够应用，这必须在更新之前显式接受</code>&nbsp; </span></p>
-<p>解决此故障可将：</p>
-<p class="style5"><span class="style6"><code>&nbsp;&nbsp; sudo apt-get update&nbsp;
-</code></span></p>
-<p>更改为：</p>
-<p><span class="style7"><code>&nbsp;&nbsp; sudo apt update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</code></span></p>
-<p>并在出现提示时选择“Y”即可正常更新安装</p>
-<p>最后在同一局域网下访问<a href="http://192.168.0.12:8888">192.168.0.12:8888</a>进入登录页面</p>
-<p><span class="style3">重点</span>：在每次启动树莓派时要进入终端启动服务</p>
-<p><code><span class="style7">&nbsp;&nbsp; docker start nextcloud&nbsp;&nbsp;&nbsp; 
-#启动服务&nbsp;&nbsp;&nbsp; </span></code></p>
-<p><span class="style7">&nbsp;&nbsp;&nbsp; <code>&nbsp;<span class="style6">docker 
-restart </span><span class="style6">nextcloud&nbsp; #重启服务</span></code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></p>
-<p class="style5"><code><span class="style6">&nbsp;&nbsp; docker stop nextcloud&nbsp;&nbsp;&nbsp;&nbsp; 
-#停止服务&nbsp;&nbsp;&nbsp; </span></code></p>
-<p>（由于没有多余的硬盘用于存储，这个项目宣告结束）</p>
-<p><span class="style8">附件</span>：<a href="docker-nextcloud.txt">docker安装nextcloud.txt</a></p>
-<hr />
-<p class="style2">记录学习过程，便于日后查看</p>
+		<p>看到了<a href="https://mp.weixin.qq.com/s?__biz=MzI4NDUwOTY3Mg==&amp;mid=2247485365&amp;idx=1&amp;sn=f2761b9be0630f8f13444b0621b2cf6c&amp;chksm=ebfb1332dc8c9a24cbf9f8164a8a865f933e0712ac36cf41a6148693bcf67003cdba65090909&amp;scene=90&amp;subscene=93&amp;sessionid=1643197038&amp;clicktime=1643197040&amp;enterid=1643197040&amp;forceh5=1&amp;ascene=56&amp;devicetype=android-22&amp;version=28000736&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=AaWHvtsWX0k4U2yPW87SpxA%3D&amp;pass_ticket=XD1ykZJOFO5Gav%2BLo6ZjuyjSqj7aGBbAjflBkLdIpCYbNOiCx7063lgrboq%2FR0VR&amp;wx_header=3">树莓派爱好者基地推送的文章</a>，
+			又正好放寒假，</p>
 
-</body>
+		<p>那就搞一搞呗，按教程一步步走就完事了，</p>
+		<p>在安装管理客户端时出现了以下提示：</p>
+		<p><span class="code-texe"> <code>&nbsp; 为了让这个仓库能够应用，这必须在更新之前显式接受</code>&nbsp;&nbsp;&nbsp;&nbsp; </span>
+		</p>
+		<p>解决此故障可将：</p>
+		<p class="color-white"><span class="code-texe"><code>&nbsp;&nbsp; sudo apt-get update&nbsp;
+				</code></span></p>
+		<p>更改为：</p>
+		<p><span class="code-texe"><code>&nbsp;&nbsp; sudo apt update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</code></span></p>
+		<p>并在出现提示时选择“Y”即可正常更新安装</p>
+		<p>最后在同一局域网下访问<a href="http://192.168.0.12:8888">树莓派ip:8888</a>进入登录页面</p>
+		<p><span class="color-red">重点</span>：在每次启动树莓派时要进入终端启动服务</p>
+		<p><code><span class="code-texe">&nbsp;&nbsp; docker start nextcloud&nbsp;&nbsp;&nbsp;
+					#启动服务&nbsp;&nbsp;&nbsp; </span></code></p>
+		<p><span class="code-texe">&nbsp;&nbsp;&nbsp; <code>&nbsp;docker
+					restart nextcloud&nbsp; #重启服务</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</span></p>
+		<p><code class="code-texe">&nbsp;&nbsp; docker stop nextcloud&nbsp;&nbsp;&nbsp;&nbsp;
+				#停止服务&nbsp;&nbsp;&nbsp; </code></p>
+		<p>（由于没有多余的硬盘用于存储，这个项目宣告结束）</p>
+		<p><span class="color-black-yello">附件</span>：<a href="docker-nextcloud.txt">docker安装nextcloud.txt</a>
+		</p>
+		<hr />
+		<p class="blog-end">记录学习过程，便于日后查看</p>
+
+	</body>
 
 </html>

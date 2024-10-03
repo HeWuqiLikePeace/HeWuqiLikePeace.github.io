@@ -1,0 +1,89 @@
+.color-white {
+	color: white;
+	/*白色*/
+}
+
+.color-red {
+	color: red;
+	/*红色*/
+}
+
+.color-green {
+	color: green;
+	/*绿色*/
+}
+
+.color-yello {
+	color: yellow;
+}
+
+.color-black-yello {
+	color: #000000;
+	background-color: #FFFF00;
+}
+
+.title {
+	text-align: center;
+	font-size: 38pt;
+	/*内容页大标题*/
+}
+
+.bankuai-text {
+	text-align: center;
+	font-size: 30pt;
+	font-family: 黑体;
+	/*内容页板块标题*/
+}
+
+.p-text{
+	font-size:medium;
+	/*P标签字体大小 14pt */
+}
+
+.bangumi-text {
+	font-family: 幼圆;
+	font-size: 20pt;
+}
+
+.blog-title{
+	font-size:24pt;
+	text-align: left;
+}
+
+.blog-date{
+	font-size:14px;
+	text-align: left;
+}
+
+.blog-end{
+	color: #C0C0C0;
+}
+
+.center {
+	text-align: center;
+	/*居中显示*/
+}
+
+.text-decoration{
+	text-decoration:none;
+	/*无文字下划线*/
+}
+
+.back {
+	font-size: xx-large;
+	font-family: 黑体;
+	/*返回按钮*/
+}
+
+.code-texe{
+	background-color: #000000;
+	color: white;
+}
+
+.font-dengxian {
+	font-family: 等线;
+}
+
+.fonth-huawenhupu {
+	font-family: 华文琥珀;
+}

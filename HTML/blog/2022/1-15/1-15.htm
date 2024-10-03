@@ -1,67 +1,63 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>1-15</title>
-<style type="text/css">
-.style1 {
-				text-decoration: line-through;
-}
-.style2 {
-				color: #C0C0C0;
-}
-.style3 {
-	font-size: xx-large;
-}
-</style>
-<base target="_blank" />
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>1-15</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="../../../css/text.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/img.css" />
+	</head>
 
-<body style="background-image: url('../../../img/bg.png'); background-attachment: fixed">
+	<body style="background-color: white; background-attachment: fixed">
 
-<h1>这是个想往树莓派里装Ubuntu，忙到最后回到起点的故事</h1>
-	<div style="position: absolute; width: 107px; height: 37px; z-index: 1; left: 109px; top: 75px" id="layer2" class="style3">
-		<a target="_self" href="javascript:history.go(-1);">返回</a></div>
-<p>2022-1-15</p>
-<hr />
+		<h1>这是个想往树莓派里装Ubuntu，忙到最后回到起点的故事</h1>
+		<div style="position: absolute; width: 107px; height: 37px; z-index: 1; left: 109px; top: 75px" id="layer2"
+			class="back">
+			<a target="_self" href="javascript:history.go(-1);">返回</a>
+		</div>
+		<p>2022-1-15</p>
+		<hr />
 
-<p>如题，因为马上要到寒假，我需要离开家一段时间，但又不能没有电脑用，</p>
-<p>总不能把主机带走吧，</p>
-<p>于是乎，我想到了我的“树莓派”</p>
-<p>这里的树莓派（<span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 28px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Raspberry 
-Pi</span>）不是一种食物，而是一种卡片式计算机的总称<a href="https://baike.baidu.com/item/树莓派/80427">百度百科：树莓派</a></p>
-<p>
-<img class="aligncenter size-full wp-image-7301" src="20201018204544994.gif" alt="" width="688" height="344" /></p>
-<p>上图的这一块就是我目前使用的版本——树莓派4B&nbsp; 2G版，</p>
-<p>当初想买4G的，不过（好贵）</p>
-<p>当然，贵不是它的缺点，是我的（bushi）</p>
-<p>在选系统之前，我想选Windows 10 IoT版，但不适配我的板子，所以选了<a href="https://baike.baidu.com/item/ubuntu/155795">Ubuntu</a>。</p>
-<p>一个下午的时间，我按照<a href="https://www.jianshu.com/p/8e9dfac49670">教程</a>一步一步来，虽然出现了教程上没提到的问题，</p>
-<p>好在都解决了，顺顺利利的刷好了系统，替换了引导，进入了命令行。</p>
-<p>在之后就是换源装桌面了，这时遇到了问题，该教程提供的源有格式错误，</p>
-<p>因为我不是专业的，不可能找出是哪错了，所以用<a href="https://www.jianshu.com/p/8819e676f2c0">这个教程</a>提供的源通过了。</p>
-<p>之后，我选择了安装KDE桌面，因为接近Windows的操作方法。</p>
-<p>已经成功进入桌面了，接下来就是好好享受新系统的时间了，</p>
-<p>按理说是这样的，但我很快发现了问题，因为这个系统多用于服务器，</p>
-<p>而服务器是不需要WiFi和音频输出的，所以新系统连不上WiFi，发不出声音！</p>
-<p>行，绝了！</p>
-<p>我本着“没有条件就创造条件”的原则，拿出我放在角落吃灰的小路由器，</p>
-<p>用网线连接路由器，由路由器连接WiFi，问题解决。</p>
-<p>至于音频，<span class="style1">不需要</span></p>
-<p>接下来，就是安装常用软件了，</p>
-<p>忙忙碌碌将近两个小时，更多的问题暴露了出来，</p>
-<p>包括但不限于程序崩溃、运行卡顿等。</p>
-<p>我决定关闭不必须的系统组件来减少压力，但我还是高估了它，</p>
-<p>终于，在安装wps时，它卡死了，读写指示灯常亮，</p>
-<p>我预感它要“死”了，等了十多分钟没有反应，果断切断电源，</p>
-<p>这时我已经知道接下来会发生什么了，因为这种事也不是一两次了，</p>
-<p>接通电源，如我预想的那样，系统损坏，卡在了引导阶段。</p>
-<p>妥了，一下午白干了，重来吧。</p>
-<p>(破防只在一瞬间)</p>
-<hr />
-<p class="style2">记录学习过程，便于日后查看</p>
+		<p>如题，因为马上要到寒假，我需要离开家一段时间，但又不能没有电脑用，</p>
+		<p>总不能把主机带走吧，</p>
+		<p>于是乎，我想到了我的“树莓派”</p>
+		<p>这里的树莓派（<span
+				style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 28px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Raspberry
+				Pi</span>）不是一种食物，而是一种卡片式计算机的总称<a href="https://baike.baidu.com/item/树莓派/80427">百度百科：树莓派</a></p>
+		<p>
+			<img class="aligncenter size-full wp-image-7301" src="20201018204544994.gif" alt="" width="688"
+				height="344" />
+		</p>
+		<p>上图的这一块就是我目前使用的版本——树莓派4B&nbsp; 2G版，</p>
+		<p>当初想买4G的，不过（好贵）</p>
+		<p>当然，贵不是它的缺点，是我的（bushi）</p>
+		<p>在选系统之前，我想选Windows 10 IoT版，但不适配我的板子，所以选了<a href="https://baike.baidu.com/item/ubuntu/155795">Ubuntu</a>。</p>
+		<p>一个下午的时间，我按照<a href="https://www.jianshu.com/p/8e9dfac49670">教程</a>一步一步来，虽然出现了教程上没提到的问题，</p>
+		<p>好在都解决了，顺顺利利的刷好了系统，替换了引导，进入了命令行。</p>
+		<p>在之后就是换源装桌面了，这时遇到了问题，该教程提供的源有格式错误，</p>
+		<p>因为我不是专业的，不可能找出是哪错了，所以用<a href="https://www.jianshu.com/p/8819e676f2c0">这个教程</a>提供的源通过了。</p>
+		<p>之后，我选择了安装KDE桌面，因为接近Windows的操作方法。</p>
+		<p>已经成功进入桌面了，接下来就是好好享受新系统的时间了，</p>
+		<p>按理说是这样的，但我很快发现了问题，因为这个系统多用于服务器，</p>
+		<p>而服务器是不需要WiFi和音频输出的，所以新系统连不上WiFi，发不出声音！</p>
+		<p>行，绝了！</p>
+		<p>我本着“没有条件就创造条件”的原则，拿出我放在角落吃灰的小路由器，</p>
+		<p>用网线连接路由器，由路由器连接WiFi，问题解决。</p>
+		<p>至于音频，<span style="text-decoration: line-through;">不需要</span></p>
+		<p>接下来，就是安装常用软件了，</p>
+		<p>忙忙碌碌将近两个小时，更多的问题暴露了出来，</p>
+		<p>包括但不限于程序崩溃、运行卡顿等，毕竟只有2GB的内存</p>
+		<p>我决定关闭不必须的系统组件来减少压力，但我还是高估了它，</p>
+		<p>终于，在安装wps时，它卡死了，读写指示灯常亮，</p>
+		<p>我预感它要“死”了，等了十多分钟没有反应，果断切断电源，</p>
+		<p>这时我已经知道接下来会发生什么了，久病成医，</p>
+		<p>接通电源，如我预想的那样，系统损坏，卡在了引导阶段。</p>
+		<p>妥了，一下午白干了，已经没有重来的心情了。</p>
+		<p>这块树莓派最终无法承担如此重任</p>
+		<hr />
+		<p class="blog-end">记录学习过程，便于日后查看</p>
 
-</body>
+	</body>
 
 </html>
