@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>3月31日</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="../../../css/text.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/img.css" />
+	</head>
+
+	<body style="background-color: white; background-attachment: fixed">
+
+		<h1>批量转换B站缓存的视频————完全使用AI进行开发</h1>
+		<p>2025年3月31日</p>
+		<div style="position: fixed; width: 71px; height: 37px; z-index: 1; right: 20px; top: 30px" id="layer1"
+					class="back">
+					<a target="_self" href="javascript:history.go(-1);">返回</a>
+				</div>
+		<hr />
+
+		<p>B站手机端的缓存非常方便，相比于PC端需要第三方工具，显然内置的工具相比之下更方便</p>
+		<p>手机缓存只要点几下按钮，即可批量下载，还同时下载了弹幕</p>
+		<p>如果有大会员，还能缓存4K视频</p>
+		<p>当然双方都有各自的优点、缺点</p>
+		<p>这里只说手机端（特指安卓）</p>
+		<p>我所使用的版本为哔哩哔哩安卓版7.30.0</p>
+		<p>(其他版本不一定适用，可能需要修改代码)</p>
+		<p>缓存文件会放在<strong>/Android/data/tv.danmaku.bili/download/</strong>目录下</p>
+		<p>这里以番剧 某科学的超电磁炮 为例</p>
+		<code>download\<br />
+				├─s_425\              # 动漫目录<br />
+				│  ├─第1集\            # 剧集目录<br />
+				│  │  ├─112\           # 音视频目录<br />
+				│  │  │  ├─video.m4s #视频文件<br />
+				│  │  │  └─audio.m4s #音频文件<br />
+				│  │  ├─entry.json #基础信息文件<br />
+				│  ├─第2集\ <br>
+				│  │  ├─112\          <br />
+				│  │  │  ├─video.m4s <br />
+				│  │  │  └─audio.m4s <br />
+				│  │  ├─entry.json <br />
+		</code>
+		<p>以此可以看出，只需通过脚本将video.m4s与audio.m4s进行合并即可</p>
+		<p>脚本怎么写？当然是交给AI！</p>
+		<p>此处使用腾X公司的AI，让混元模型和deepseek模型之间相互纠错</p>
+		<p>(详细代码见文章底部附件)</p>
+		<p>简述一下原理：</p>
+		<p>使用ffmpeg将video.m4s与audio.m4s进行合并(需先安装ffmpeg并配置环境变量)</p>
+		<p>将输出的mp4文件提取到单独的目录（这里为了避免目录问题，统一输出到D:/outputs）</p>
+		<p>解析entry.json文件，提取动漫名、剧集名、集数等信息，分别给文件夹和mp4文件命名</p>
+		<p>合并完毕的路径如下</p>
+		<code>D:\outputs\<br />
+				├─某科学的超电磁炮\<br />
+				│  ├─第1集\<br />
+				│  │  └─电击使 Electro Master.mp4\<br />
+				│  ├─第2集\ <br>
+				│  │  └─炎日下工作 必须补充水分.mp4\<br />
+		</code>
+		<p>需要注意的是，AI在多次修改代码后会逐渐“忘记”较为靠前的要求</p>
+		<p>就会出现以前要求修改过的错误重复出现的情况</p>
+		<p>这时应重新开启一个新的对话，让AI分析代码后继续提出要求</p>
+		<p>少数情况下AI会自主分析出错误并修改，大部分时间都需要要求AI针对某个问题进行修改</p>
+		<p>下面是AI自主分析的例子：</p>
+		<code>现在，针对上述可能的点，逐一分析：<br />
+				首先，关于find_media_files的问题。原函数查找entry.json所在目录下的video.m4s和audio.m4s，但可能实际情况是这些文件位于剧集目录的子目录中。<br />比如，剧集目录结构可能是这样的：每个剧集目录下有一个子目录（如数字或随机字符串），里面包含video.m4s和audio.m4s，以及entry.json可能在该子目录中。<br />例如：ep_dir = "s_123456/7890"<br />
+				entry_json路径是 "s_123456/7890/xyz/entry.json"<br />
+				而音视频文件在 "s_123456/7890/xyz/video.m4s" 和同一目录下的audio.m4s。<br />
+				在这种情况下，原代码的find_media_files函数（entry_dir是entry.json的路径，其dirname是xyz目录的路径），所以current_dir是xyz目录，此时检查该目录是否有这两个文件，是正确的。
+				但是，如果entry.json位于剧集目录的根目录，而音视频文件在子目录中，那么原代码将找不到。<br />或者，如果entry.json位于某个子目录，而音视频文件在另一个子目录，那么也会有问题。<br />这种情况下，原函数可能无法正确找到文件。<br />
+				因此，find_media_files的逻辑是否正确，取决于B站下载缓存的实际目录结构。<br />如果用户提供的脚本是基于特定的结构，而实际结构不同，那么这部分可能需要调整。<br />
+		</code>
+		<p>这次输出的代码就完美的符合了我的要求</p>
+		<p>很明显，对于简单的小软件，AI完全可以胜任开发工作，但对于我这个对python尚不熟练的初学者帮助不大</p>
+		<p>而且出错较多，小小的功能也需要多次修改</p>
+		<p>在代码中可以看到这串代码的版本号是v15，实际上迭代了不止15次</p>
+		<p>使用AI仍需谨慎</p>
+		<span class="color-black-yello">附件：</span><a href="ConvertM4S.py">ConvertM4S.py</a>
+		<hr />
+		<p class="blog-end">记录学习过程，便于日后查看</p>
+
+	</body>
+
+</html>
