@@ -1,0 +1,202 @@
+{
+    "platform": [
+        {
+            "platformName": "Windows",
+            "categories": [
+                {
+                    "categoryName": "工具",
+                    "items": [
+                        {
+                            "name": "图吧工具箱",
+                            "annotation":"官方网站",
+                            "img": "/img/software/tbgjx.webp",
+                            "url": "http://www.tbtool.cn/"
+                        },
+                        {
+                            "name": "卡吧工具箱",
+                            "annotation":"官方网站",
+                            "img": "/img/software/kbgjx.webp",
+                            "url": "http://www.kbtool.cn/"
+                        },
+                        {
+                            "name": "搞机工具箱",
+                            "annotation":"晨钟酱出品",
+                            "img": "/img/software/gjgjx.webp",
+                            "url": "https://hbingyu.lanzoum.com/ie3dL0fgnaej"
+                        },
+                        {
+                            "name": "Windows系统注册机",
+                            "annotation":"<p>支持win7、10，可能支持win11</p><p style='color:red'>密码：1td8</p>",
+                            "img": "/img/software/zcj.webp",
+                            "url": "https://hbingyu.lanzoum.com/b00wfd1cj"
+                        },
+                        {
+                            "name": "OfficeTools",
+                            "annotation":"快速安装和管理Microsoft Office的工具",
+                            "img": "/img/software/OfficeTool.webp",
+                            "url": "https://otp.landian.vip/zh-cn/"
+                        },
+                        {
+                            "name": "Office激活工具",
+                            "annotation":"<p>一键激活Office</p><p>不支持Office365和Win7及以前的系统</p>",
+                            "img": "/img/software/Office.webp",
+                            "url": "https://hbingyu.lanzoum.com/iSXRV1arb93c"
+                        },
+                        {
+                            "name": "快剪辑",
+                            "annotation":"快速无水印剪辑",
+                            "img": "/img/software/kjj.webp",
+                            "url": "https://down.360safe.com/se/Quick64MediaEditor_web_1.2.0.4106.exe"
+                        },
+                        {
+                            "name": "U盘美化",
+                            "annotation":"更换U盘、硬盘图标",
+                            "img": "/img/software/upmh.webp",
+                            "url": "https://hbingyu.lanzoum.com/ifNEq0fgnd2f"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "破解软件",
+                    "items": [
+                        {
+                            "name": "Bandicam",
+                            "annotation":"斑迪录屏 VIP破解",
+                            "img": "/img/software/Bandicam.webp",
+                            "url": "https://hbingyu.lanzoum.com/icKRX0fgotid"
+                        },
+                        {
+                            "name": "迅雷11",
+                            "annotation":"本地VIP破解",
+                            "img": "/img/software/xl.webp",
+                            "url": "https://hbingyu.lanzoum.com/iOk4211ogn2d"
+                        },
+                        {
+                            "name": "CleanFlashPlayer",
+                            "annotation":"Flash三合一安装器",
+                            "img": "/img/software/CleanFlashPlayer.webp",
+                            "url": "https://hbingyu.lanzoum.com/icXFh0f1qs8j"
+                        },
+                        {
+                            "name": "Adobe Audition CS6",
+                            "annotation":"",
+                            "img": "/img/software/Au.webp",
+                            "url": "http://www.downza.cn/soft/223812.html"
+                        },
+                        {
+                            "name": "Adobe Premiere Pre CS6",
+                            "annotation":"",
+                            "img": "/img/software/Pr.webp",
+                            "url": "http://www.downza.cn/soft/203990.html"
+                        },
+                        {
+                            "name": "Adobe Photoshop 2023",
+                            "annotation":"",
+                            "img": "/img/software/ps.webp",
+                            "url": "https://www.yutu.cn/softhtml/showsoft_8389.html"
+                        },
+                        {
+                            "name": "Beyond Compare",
+                            "annotation":"文件、文件夹比较工具",
+                            "img": "/img/software/Beyond Compare.webp",
+                            "url": "https://hbingyu.lanzoum.com/inSR80z543sb"
+                        },
+                        {
+                            "name": "格式工厂",
+                            "annotation":"去除广告和挖矿程序",
+                            "img": "/img/software/gsgc.webp",
+                            "url": "https://hbingyu.lanzoum.com/itFKk11ohm6h"
+                        },
+                        {
+                            "name": "Cinema 4D",
+                            "annotation":"C4D",
+                            "img": "/img/software/C4D.webp",
+                            "url": "https://www.yutu.cn/softhtml/showsoft_8021.html"
+                        },
+                        {
+                            "name": "FL Studio 20",
+                            "annotation":"<b style='color:red'>注意压缩包内的使用说明</b><p style='color:green'>解压密码：DEsRlxOK4lzZImdD<p>",
+                            "img": "/img/software/FL20.webp",
+                            "url": "https://pan.baidu.com/s/1Y-l8e5bS78POVpBvW-x9Pw?pwd=pjrj"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "游戏",
+                    "items": [
+                        {
+                            "name": "逃离塔克夫",
+                            "annotation":"离线塔科夫论坛<br/>每月1日开放注册",
+                            "img": "/img/software/tltkf.webp",
+                            "url": "https://sns.oddba.cn/"
+                        },
+                        {
+                            "name": "爱上你的冒牌货",
+                            "annotation":"<p>汉化版</p><a href='https://2550505.com/post/10103' target='_blank'>发布页</a>",
+                            "img": "/img/software/asndmph.webp",
+                            "url": "https://pan.baidu.com/s/1o6evQ1B_j6Q13TnZ8GPAfw?pwd=game"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "platformName": "Android",
+            "categories": [
+                {
+                    "categoryName": "安装包",
+                    "items": [
+                        {
+                            "name": "兽耳桌面 2.7.6",
+                            "annotation":"最后一个带助手的Launcher启动器版本",
+                            "img": "/img/software/sezs.webp",
+                            "url": "https://hbingyu.lanzoum.com/iQfih2u48dwf"
+                        },
+                        {
+                            "name": "百度地图",
+                            "annotation":"精简版",
+                            "img": "/img/software/bddt.png",
+                            "url": "https://hbingyu.lanzoum.com/insyy0f1g9qd"
+                        },
+                        {
+                            "name": "百度网盘",
+                            "annotation":"精简版",
+                            "img": "/img/software/bdwp.png",
+                            "url": "https://hbingyu.lanzoum.com/ijJJe0f1qoyb"
+                        },
+                        {
+                            "name": "Beaker",
+                            "annotation":"烧杯模拟",
+                            "img": "/img/software/beaker.webp",
+                            "url": "https://hbingyu.lanzoum.com/iBXsh0fgpl9c"
+                        },
+                        {
+                            "name": "bika",
+                            "annotation":"将.zip格式改为.apk格式即可安装",
+                            "img": "/img/software/bk.webp",
+                            "url": "https://hbingyu.lanzoum.com/i4ffK0fo8ehe"
+                        },
+                        {
+                            "name": "ES文件浏览器",
+                            "annotation":"无广告无会员的历史版本",
+                            "img": "/img/software/es.png",
+                            "url": "https://android-apps.pp.cn/fs08/2016/06/17/0/106_3bb9617813fe6bc22626c5e22566fa16.apk"
+                        },
+                        {
+                            "name": "FX系统管理",
+                            "annotation":"ES文件浏览器的平替",
+                            "img": "/img/software/fx.webp",
+                            "url": "https://hbingyu.lanzoum.com/ic5ag0hlzzed"
+                        },
+                        {
+                            "name": "Sketchbook",
+                            "annotation":"破解高级版",
+                            "img": "/img/software/sketchbook.webp",
+                            "url": "https://hbingyu.lanzoum.com/iWKee2u47tra"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
