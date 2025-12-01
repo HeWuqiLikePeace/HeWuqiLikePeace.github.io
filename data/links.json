@@ -55,6 +55,14 @@
         {
             "name":"在线工具集 - SVG工具",
             "url":"https://tooltool.net/zh"
+        },
+        {
+            "name":"Json工具箱",
+            "url":"https://www.json.cn/"
+        },
+        {
+            "name":"Windows激活",
+            "url":"https://massgrave.dev/"
         }
     ]
 }
